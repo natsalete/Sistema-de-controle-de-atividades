@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #322757;
+    }
+  </style>
+  <body>
+    <aside>
+      <img src="./images/Logo.svg" alt="Menino segurando caderno" />
+      <section>
+        <a href="#"><p>Dashboard</p></a>
+      </section>
+    </aside>
+    <div class="container">
+      <div>
+        <h2>CADASTRAR ATIVIDADE</h2>
+        <select name="select-curso" id="curso">
+          <option value="" disabled selected>Selecione um curso...</option>
+          <option value="ads">Análise e Desenvolvimento de Sistema</option>
+          <option value="gestao">Gestão comercial</option>
+          <option value="engenharia">Engenharia Eletrica</option>
+        </select>
+        <select name="select-ads" id="periodo-ads" disabled>
+          <option value="" disabled selected>Selecione um período...</option>
+          <option value="primeiro-ads">1° período</option>
+          <option value="segundo-ads">2° período</option>
+          <option value="terceiro-ads">3° período</option>
+          <option value="quarto-ads">4° período</option>
+          <option value="quinto-ads">5° período</option>
+          <option value="sexto-ads">6° período</option>
+        </select>
+        <select name="select-gestao" id="periodo-gestao"  style="display:none;">
+          <option value="" disabled selected>Selecione um período...</option>
+          <option value="primeiro-gestao">1° período</option>
+          <option value="segundo-gestao">2° período</option>
+          <option value="terceiro-gestao">3° período</opt ion>
+          <option value="quarto-gestao">4° período</option>
+          <option value="quinto-gestao">5° período</option>
+        </select>
+        <select name="select-engenharia" id="periodo-engenharia"  style="display:none;">
+          <option value="" disabled selected>Selecione um período...</option>
+          <option value="primeiro-engenharia">1° período</option>
+          <option value="segundo-engenharia">2° período</option>
+          <option value="terceiro-engenharia">3° período</option>
+          <option value="quarto-engenharia">4° período</option>
+          <option value="quinto-engenharia">5° período</option>
+          <option value="sexto-engenharia">6° período</option>
+          <option value="setimo-engenharia">7° período</option>
+          <option value="oitavo-engenharia">8° período</option>
+          <option value="nono-engenharia">9° período</option>
+          <option value="decimo-engenharia">10° período</option>
+        </select>
+        <select name="select-matPrimeiroAds" id="select-matPrimeiroAds" disabled>
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">CONCEITOS DE ALGORITMOS</option>
+          <option value="">ÉTICA, LEGISLAÇÃO E CIDADANIA</option>
+          <option value="">GERENCIAMENTO DE PROCESSOS DE NEGÓCIO</option>
+          <option value="">INTRODUÇÃO À ÁLGEBRA LINEAR</option>
+          <option value="">INTRODUÇÃO À COMPUTAÇÃO E SOFTWARE</option>
+          <option value="">LEITURA E PRODUÇÃO DE TEXTO</option>
+          <option value="">LÓGICA DE PROGRAMAÇÃO</option>
+        </select>
+        <select name="select-matSegundoAds" id="select-matSegundoAds" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES</option>
+          <option value="">BANCO DE DADOS I</option>
+          <option value="">ENGENHARIA DE SOFTWARE I</option>
+          <option value="">INGLÊS INSTRUMENTAL</option>
+          <option value="">INTRODUÇÃO À COMPUTAÇÃO E SOFTWARE</option>
+          <option value="">LINGUAGENS DE PROGRAMAÇÃO</option>
+          <option value="">METODOLOGIA CIENTÍFICA</option>
+          <option value="">PROBABILIDADE E ESTATÍSTICA</option>
+        </select>
+        <select name="select-matTerceiroAds" id="select-matTerceiroAds" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">BANCO DE DADOS II</option>
+          <option value="">ENGENHARIA DE SOFTWARE II</option>
+          <option value="">ESTRUTURA DE DADOS I</option>
+          <option value="">MATEMÁTICA APLICADA À COMPUTAÇÃO</option>
+          <option value="">PROGRAMAÇÃO ORIENTADA A OBJETOS I</option>
+          <option value="">SISTEMAS OPERACIONAIS</option>
+        </select>
+        <select name="select-matQuartoAds" id="select-matQuartoAds" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">DESENVOLVIMENTO DE APLICAÇÕES WEB I</option>
+          <option value="">ENGENHARIA DE SOFTWARE III</option>
+          <option value="">ESTRUTURA DE DADOS II</option>
+          <option value="">EXTENSÃO I</option>
+          <option value="">PROGRAMAÇÃO ORIENTADA A OBJETOS II</option>
+          <option value="">REDES DE COMPUTADORES</option>
+        </select>
+        <select name="select-matQuintoAds" id="select-matQuintoAds" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">DESENVOLVIMENTO DE APLICAÇÕES WEB II</option>
+          <option value="">EMPREENDEDORISMO</option>
+          <option value="">EXPERIÊNCIA DO USUÁRIO</option>
+          <option value="">EXTENSÃO II</option>
+          <option value="">INTELIGÊNCIA DE NEGÓCIOS</option>
+          <option value="">SISTEMAS DISTRIBUÍDOS</option>
+          <option value="">TÓPICOS ESPECIAIS</option>
+        </select>
+        <select name="select-matSextoAds" id="select-matSextoAds" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">EXTENSÃO III</option>
+          <option value="">GESTÃO DE PROJETOS</option>
+          <option value="">INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL</option>
+          <option value="">OPTATIVA</option>
+          <option value="">PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS</option>
+          <option value="">SEGURANÇA DA INFORMAÇÃO</option>
+        </select>
+        <select name="select-matPrimeiroGestao" id="select-matPrimeiroGestao" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ADMINISTRAÇÃO DE VENDAS</option>
+          <option value="">EXTENSÃO I</option>
+          <option value="">FUNDAMENTOS DE GESTÃO</option>
+          <option value="">INFORMÁTICA</option>
+          <option value="">LEITURA E PRODUÇÃO DE TEXTOS</option>
+          <option value="">MATEMÁTICA</option>
+          <option value="">TEORIAS ECONÔMICAS</option>
+        </select>
+        <select name="select-matSegundoGestao" id="select-matSegundoGestao" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ADMINISTRAÇÃO DE VENDAS</option>
+          <option value="">EXTENSÃO I</option>
+          <option value="">FUNDAMENTOS DE GESTÃO</option>
+          <option value="">INFORMÁTICA</option>
+          <option value="">LEITURA E PRODUÇÃO DE TEXTOS</option>
+          <option value="">MATEMÁTICA</option>
+          <option value="">TEORIAS ECONÔMICAS</option>
+        </select>
+        <select name="select-matTerceiroGestao" id="select-matTerceiroGestao" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ADMINISTRAÇÃO DE MARKETING</option>
+          <option value="">CONTABILIDADE GERENCIAL E DE CUSTOS</option>
+          <option value="">DIREITO EMPRESARIAL</option>
+          <option value="">ÉTICA E RESPONSABILIDADE SOCIAL E AMBIENTAL</option>
+          <option value="">EXTENSÃO III</option>
+          <option value="">GESTÃO DA QUALIDADE</option>
+          <option value="">GESTÃO DE AGRONEGÓCIOS</option>
+        </select>
+        <select name="select-matQuartoGestao" id="select-matQuartoGestao" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">DIREITO DO TRABALHO</option>
+          <option value="">EMPREENDEDORISMO</option>
+          <option value="">EXTENSÃO IV</option>
+          <option value="">GESTÃO DO VAREJO</option>
+          <option value="">EXTENSÃO III</option>
+          <option value="">GESTÃO FINANCEIRA E ORÇAMENTÁRIA</option>
+          <option value="">GESTÃO OPERACIONAL DE LOJAS</option>
+        </select>
+        <select name="select-matQuintoGestao" id="select-matQuintoGestao" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">DIREITO TRIBUTÁRIO</option>
+          <option value="">GESTÃO DE FRANQUIAS</option>
+          <option value="">LOGÍSTICA</option>
+          <option value="">METODOLOGIA CIENTÍFICA II</option>
+          <option value="">OPTATIVA</option>
+          <option value="">GESTÃO FINANCEIRA E ORÇAMENTÁRIA</option>
+          <option value="">PRÁTICAS EM GESTÃO COMERCIAL</option>
+        </select>
+        <select name="select-matPrimeiroEng" id="select-matPrimeiroEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">CÁLCULO 1</option>
+          <option value="">CONCEITOS DE ALGORITMOS</option>
+          <option value="">ERGONOMIA E SEGURANÇA NO TRABALHO</option>
+          <option value="">GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR</option>
+          <option value="">INTRODUÇÃO À ENGENHARIA ELÉTRICA</option>
+          <option value="">METODOLOGIA CIENTÍFICA</option>
+          <option value="">QUÍMICA GERAL</option>
+        </select>
+        <select name="select-matSegundoEng" id="select-matSegundoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">CÁLCULO 2</option>
+          <option value="">CIÊNCIAS DO AMBIENTE</option>
+          <option value="">EXPRESSÃO GRÁFICA</option>
+          <option value="">EXTENSÃO 1</option>
+          <option value="">LEITURA E PRODUÇÃO DE TEXTOS</option>
+          <option value="">LINGUAGENS DE PROGRAMAÇÃO</option>
+          <option value="">PROBABILIDADE E ESTATÍSTICA</option>
+        </select>
+        <select name="select-matTerceiroEng" id="select-matTerceiroEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">CÁLCULO 3</option>
+          <option value="">CIRCUITOS ELÉTRICOS 1</option>
+          <option value="">ESTRUTURA DE DADOS 1</option>
+          <option value="">EXTENSÃO 2</option>
+          <option value="">FÍSICA 1</option>
+          <option value="">FUNDAMENTOS DE GESTÃO</option>
+        </select>
+        <select name="select-matQuartoEng" id="select-matQuartoEng"" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES</option>
+          <option value="">CÁLCULO 4</option>
+          <option value="">CIRCUITOS ELÉTRICOS 2</option>
+          <option value="">ELETRICIDADE E ELETROMAGNETISMO</option>
+          <option value="">EXTENSÃO 3</option>
+          <option value="">SISTEMAS DIGITAIS 1</option>
+        </select>
+        <select name="select-matQuintoEng" id="select-matQuintoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">CÁLCULO NUMÉRICO</option>
+          <option value="">CONVERSÃO ELETROMECÂNICA DE ENERGIA</option>
+          <option value="">ECONOMIA</option>
+          <option value="">ELETRÔNICA ANALÓGICA EXPERIMENTAL 1</option>
+          <option value="">INSTALAÇÕES ELÉTRICAS</option>
+          <option value="">MECÂNICA DOS SÓLIDOS</option>
+          <option value="">SISTEMAS DIGITAIS 2</option>
+          <option value="">TEORIA DE ELETRÔNICA ANALÓGICA 1</option>
+        </select>
+        <select name="select-matSextoEng" id="select-matSextoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">DISTRIBUIÇÃO DE ENERGIA ELÉTRICA</option>
+          <option value="">ELETRÔNICA ANALÓGICA EXPERIMENTAL 2</option>
+          <option value="">FÍSICA 2</option>
+          <option value="">FUNDAMENTOS DE MICROCONTROLADORES</option>
+          <option value="">MÁQUINAS ELÉTRICAS EXPERIMENTAL</option>
+          <option value="">SINAIS E SISTEMAS</option>
+          <option value="">TEORIA DE ELETRÔNICA ANALÓGICA 2</option>
+          <option value="">TEORIA DE MÁQUINAS ELÉTRICAS</option>
+        </select>
+        <select name="select-matSetimoEng" id="select-matSetimoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ACIONAMENTOS ELETROMECÂNICOS EXPERIMENTAL</option>
+          <option value="">ANÁLISE DE SISTEMAS ELÉTRICOS DE POTÊNCIA</option>
+          <option value="">INSTRUMENTAÇÃO E MEDIDAS</option>
+          <option value="">MECÂNICA DOS FLUIDOS</option>
+          <option value="">SISTEMAS DE CONTROLE</option>
+          <option value="">SISTEMAS MICROPROCESSADOS</option>
+          <option value="">TEORIA DE ACIONAMENTOS ELETROMECÂNICOS</option>
+        </select>
+        <select name="select-matOitavoEng" id="select-matOitavoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">AUTOMAÇÃO INDUSTRIAL</option>
+          <option value="">ELETRÔNICA DE POTÊNCIA 1</option>
+          <option value="">PROCESSAMENTO DIGITAL DE SINAIS</option>
+          <option value="">PROTEÇÃO DE SISTEMAS ELÉTRICOS DE POTÊNCIA</option>
+          <option value="">TRABALHO DE CONCLUSÃO DE CURSO 1</option>
+          <option value="">TRANSMISSÃO DE ENERGIA ELÉTRICA</option>
+          <option value="">UNIDADE OPTATIVA 1</option>
+        </select>
+        <select name="select-matNonoEng" id="select-matNonoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">ELETRÔNICA DE POTÊNCIA 2</option>
+          <option value="">INSTALAÇÕES ELÉTRICAS INDUSTRIAIS</option>
+          <option value="">PRINCÍPIOS DE COMUNICAÇÃO</option>
+          <option value="">QUALIDADE DA ENERGIA ELÉTRICA</option>
+          <option value="">REDES INDUSTRIAIS E SISTEMAS SUPERVISÓRIOS</option>
+          <option value="">SOCIOLOGIA DO TRABALHO</option>
+          <option value="">UNIDADE OPTATIVA 2</option>
+        </select>
+        <select name="select-matDecimoEng" id="select-matDecimoEng" style="display:none;">
+          <option value="" disabled selected>Selecione uma matéria...</option>
+          <option value="">NOÇÕES DE DIREITO E LEGISLAÇÃO</option>
+          <option value="">TRABALHO DE CONCLUSÃO DE CURSO 2</option>
+        </select>
+        <input type="text" placeholder="Nome da atividade" />
+        <input type="number" placeholder="Nota" />
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
