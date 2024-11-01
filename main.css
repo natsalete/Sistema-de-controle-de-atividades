@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f0f1f3;
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #322757;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+aside img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+aside .links {
+  width: 200px;
+  height: 53px;
+  margin-left: 50px;
+  margin-top: 65px;
+  border-radius: 30px 0 0px 30px;
+  background: #f0f1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside a {
+  text-decoration: none;
+  color: #5c4e8e;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+aside .links a:hover {
+    color:  #007bff;
+  }
+
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10% 0; 
+  }
+  
+  .container > div {
+    width: 80%; 
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+  }
+  
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+
+    select, input[type="text"], input[type="number"] {
+    width: 100%;
+    height: 54px;
+    padding: 10px;
+    margin-top: 15px;
+    background: #F0F0F0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  select:focus, input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #655B88;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #655B88;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #3f3858;
+    cursor: pointer;
+  }

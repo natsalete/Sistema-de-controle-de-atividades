@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('#curso').change(function() {
     var cursoSelecionado = $(this).val();
   
@@ -33,6 +34,7 @@ $(document).ready(function() {
     } else if (cursoSelecionado === 'gestao') {
       $('#periodo-gestao').show().prop('disabled', false);
       $('#select-matPrimeiroAds').show().prop('disabled', true);
+      
       
       $('#periodo-gestao').change(function() {
         var periodoSelecionado = $(this).val();

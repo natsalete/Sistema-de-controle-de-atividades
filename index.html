@@ -3,22 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sistema de Controle de Atividade</title>
+    <link rel="stylesheet" href="main.css">
   </head>
-  <style>
-    body {
-      background-color: #322757;
-    }
-  </style>
   <body>
     <aside>
       <img src="./images/Logo.svg" alt="Menino segurando caderno" />
-      <section>
+      <div class="links">
         <a href="#"><p>Dashboard</p></a>
-      </section>
+      </div>
     </aside>
-    <div class="container">
-      <div>
+    <section class="container">
+      <div class="atividade">
         <h2>CADASTRAR ATIVIDADE</h2>
         <select name="select-curso" id="curso">
           <option value="" disabled selected>Selecione um curso...</option>
@@ -261,8 +257,9 @@
         </select>
         <input type="text" placeholder="Nome da atividade" />
         <input type="number" placeholder="Nota" />
+        <button type="submit">CADASTRAR</button>
       </div>
-    </div>
+    </section>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
