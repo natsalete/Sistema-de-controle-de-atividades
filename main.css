@@ -1,121 +1,137 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  display: flex;
-  background: #f0f1f3;
-}
-
-aside {
-  width: 250px;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  background-color: #322757;
-  color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-aside img {
-  width: 60px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-aside .links {
-  width: 200px;
-  height: 53px;
-  margin-left: 50px;
-  margin-top: 65px;
-  border-radius: 30px 0 0px 30px;
-  background: #f0f1f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-aside a {
-  text-decoration: none;
-  color: #5c4e8e;
-  font-size: 18px;
-  padding: 10px;
-  transition: background-color 0.3s;
-}
-
-aside .links a:hover {
-    color:  #007bff;
+/* Reset básico para remover margens e paddings, 
+   garantir o uso de box-sizing e definir a fonte padrão */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
   }
-
-
-.container {
-    flex: 1;
+  
+  /* Configurações do corpo da página, incluindo um layout flexível e uma cor de fundo */
+  body {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10% 0; 
+    background: #f0f1f3;
   }
   
+  /* Estilização do menu lateral */
+  aside {
+    width: 250px; /* Largura fixa do menu */
+    height: 100vh; /* Altura de toda a janela */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #322757; /* Cor de fundo roxa escura */
+    color: white; /* Cor do texto */
+    position: fixed; /* Fixa o menu na lateral esquerda */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column; /* Disposição dos itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  /* Estilização da logo no menu lateral */
+  aside img {
+    width: 60px; /* Largura da imagem */
+    height: auto; /* Mantém proporções */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+  }
+  
+  /* Estilização dos links no menu lateral */
+  aside .links {
+    width: 200px;
+    height: 53px;
+    margin-left: 50px;
+    margin-top: 65px;
+    border-radius: 30px 0 0 30px; /* Bordas arredondadas */
+    background: #f0f1f3; /* Fundo claro */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+  
+  /* Estilo básico para os links */
+  aside a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #5c4e8e; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Transição suave no hover */
+  }
+  
+  /* Mudança de cor ao passar o mouse sobre o link */
+  aside .links a:hover {
+    color: #007bff; /* Azul */
+  }
+  
+  /* Área principal da página */
+  .container {
+    flex: 1; /* Expande o container para ocupar o espaço restante */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 10% 0; /* Espaçamento interno */
+  }
+  
+  /* Estilização do conteúdo dentro do container */
   .container > div {
-    width: 80%; 
-    max-width: 600px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; 
+    width: 80%; /* Largura do conteúdo em relação ao container */
+    max-width: 600px; /* Largura máxima */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px; /* Espaço acima */
   }
   
+  /* Estilo do título */
   h2 {
     margin-top: 24px;
     margin-bottom: 30px;
     font-size: 24px;
-    color: #333;
-    text-align: center;
-  }
-
-    select, input[type="text"], input[type="number"] {
-    width: 100%;
-    height: 54px;
-    padding: 10px;
-    margin-top: 15px;
-    background: #F0F0F0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
+    color: #333; /* Cinza escuro */
+    text-align: center; /* Centraliza o texto */
   }
   
+  /* Estilo dos campos de formulário */
+  select, input[type="text"], input[type="number"] {
+    width: 100%; /* Ocupa toda a largura */
+    height: 54px; /* Altura fixa */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 15px; /* Espaço acima */
+    background: #F0F0F0; /* Fundo cinza claro */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Placeholder do campo de texto */
   input::placeholder {
-    color: #999;
+    color: #999; /* Cinza mais claro */
   }
   
+  /* Estilo do foco nos campos */
   select:focus, input[type="text"]:focus, input[type="number"]:focus {
-    outline: none;
-    border-color: #655B88;
+    outline: none; /* Remove o contorno padrão */
+    border-color: #655B88; /* Borda roxa */
   }
   
+  /* Estilo básico do botão */
   button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #655B88;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    width: 100%; /* Ocupa toda a largura */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: white; /* Texto branco */
+    background-color: #655B88; /* Fundo roxo */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 20px; /* Espaço acima */
   }
   
+  /* Estilo do botão ao passar o mouse */
   button:hover {
-    background-color: #3f3858;
-    cursor: pointer;
+    background-color: #3f3858; /* Fundo roxo mais escuro */
+    cursor: pointer; /* Cursor de clique */
   }
+  
